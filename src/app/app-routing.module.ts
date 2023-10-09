@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule, Routes } from '@angular/router'
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/heroes'},
-  { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'compose', component: ComposeMessageComponent, outlet:'popup'},
   { path: '**', component: PageNotFoundComponent }
 ]
 

@@ -1,0 +1,54 @@
+/* CrisisListComponent's private CSS styles */
+.crisises {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.crisises li {
+  position: relative;
+  cursor: pointer;
+}
+
+.crisises li:hover {
+  left: .1em;
+}
+
+.crisises a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  background-color: #eee;
+  margin: .5rem .5rem .5rem 0;
+  padding: .5rem 0;
+  border-radius: 4px;
+}
+
+.crisises a:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.crisises a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.crisises .selected a {
+  background-color: #d6e6f7;
+}
+
+.crisises .selected a:hover {
+  background-color: #bdd7f5;
+}
+
+.crisises .badge {
+  padding: .5em .6em;
+  color: white;
+  background-color: #435b60;
+  min-width: 16px;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

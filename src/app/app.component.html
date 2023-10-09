@@ -2,7 +2,10 @@
 <nav>
   <a routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Crisis Center</a>
   <a routerLink="/heroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a>
+  <a [routerLink]="[{ outlets: { popup: ['compose']}}]">Contact</a>
+  <!-- 将链接导航到名为 popup 的路由出口，并加载 'compose' 路由路径的内容到该出口中 -->
 </nav>
 <div [@routerAnimation]="getAnimationData()">
   <router-outlet></router-outlet>
 </div>
+<router-outlet name="popup"></router-outlet>

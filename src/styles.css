@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+a {
+  padding: 1%;
+  margin: 3%;
+  border-radius: 4px 0 0 4px;
+  background-color: rgb(133, 134, 137);
+  color: aliceblue;
+  font-style: border;
+}
