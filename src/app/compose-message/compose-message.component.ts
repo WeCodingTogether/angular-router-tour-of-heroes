@@ -19,8 +19,9 @@ export class ComposeMessageComponent {
 
     setTimeout(() => {
       this.sending = false;
+      this.details = 'Message Sent';
       this.closePopup();
-    }, 1000);
+    }, 3000);
   }
 
   cancel() {

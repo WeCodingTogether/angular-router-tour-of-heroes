@@ -14,7 +14,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class CrisisListComponent implements OnInit {
 
-  crisises$!: Observable<Crisis[]>;
+  crises$?: Observable<Crisis[]>;
   selectedId = 0;
 
   constructor(
@@ -23,7 +23,7 @@ export class CrisisListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.crisises$ = this.route.paramMap.pipe(
+    this.crises$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10); // 10 表示使用十进制进行转换, 更符合日常用法
         return this.service.getCrisises();

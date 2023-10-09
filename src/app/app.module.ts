@@ -10,15 +10,15 @@ import { HeroesModule } from './heroes/heroes.module';
 import { CrisisCenterModule } from './crisis-center/crises-center.module';
 import { CommonModule } from '@angular/common';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
-
-
+import { AdminModule } from './admin/admin.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    ComposeMessageComponent
+    ComposeMessageComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +27,8 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     FormsModule,
     HeroesModule,
     CrisisCenterModule,
+    AdminModule,
+    AuthModule,
     AppRoutingModule,  // last, after HeroesModule
   ],
   providers: [],

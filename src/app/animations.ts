@@ -4,7 +4,7 @@ import {
 } from '@angular/animations'
 
 export const slideInAnimation =
-  trigger('routeAnimation', [
+  trigger('routerAnimation', [
     transition('heroes <=> hero', [
       style({ position: 'relative' }),
       query(':enter, :leave', [
