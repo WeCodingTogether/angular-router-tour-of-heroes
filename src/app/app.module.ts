@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
-import { HeroListComponent } from './hero-list/hero-list.component';
-import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { HeroesModule } from './heroes/heroes.module';
+
 
 
 
@@ -15,13 +16,14 @@ import { AppRoutingModule } from './app-routing.module'
   declarations: [
     AppComponent,
     CrisisListComponent,
-    HeroListComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,  // 动画
     FormsModule,
-    AppRoutingModule //When true, log all internal navigation events to the console. Use for debugging.
+    HeroesModule,
+    AppRoutingModule,  // last, after HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
