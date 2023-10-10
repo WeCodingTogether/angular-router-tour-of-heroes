@@ -8,7 +8,7 @@
     <label>Enter your message:</label>
   </div>
   <div>
-    <textarea id="message" [(ngModel)]="message" rows="10" cols="35" [disabled]="sending"></textarea>
+    <textarea id="message" [(ngModel)]="message" rows="10" cols="35" [disabled]="sending" name="message"></textarea>
   </div>
   <p *ngIf="!sending">
     <button type="button" (click)="send()">Send</button>

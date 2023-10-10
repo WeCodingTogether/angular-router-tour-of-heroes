@@ -8,7 +8,7 @@ import { canDeactivateGuard } from '../can-deactivate.guard';
 import { crisisDetailResolver } from './crisis-detail-resolver';
 
 const crisisCenterRoutes: Routes = [
-  { path: 'crisis-center',
+  { path: '',
     component: CrisisCenterComponent,
     children: [
       {
